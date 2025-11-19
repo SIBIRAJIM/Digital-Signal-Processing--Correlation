@@ -23,6 +23,7 @@ Step 5: Terminate the program.
 clc; % clear screen
 clear all; % clear screen
 close all; % close all figure windows
+
 % INPUT SIGNAL-1
 a=input('enter the starting x(n)');
 x=input('Enter the x(n) sequence');
@@ -32,6 +33,7 @@ stem(n,x)
 xlabel('Time')
 ylabel('Amplitude')
 title('Input Signal-1')
+
 % INPUT SIGNAL 2
 b=input('enter the starting y(n)');
 y=input('Enter the y(n) sequence');
@@ -42,6 +44,7 @@ stem(n1,y)
 xlabel('Time')
 ylabel('Amplitude')
 title('Input signal-2')
+
 % DISCRETE AUTO CORRELATED SIGNAL
 out1=xcorr(x,x)
 n2=a-m:1:length(out1)+a-m-1;
@@ -50,7 +53,6 @@ stem(n2,out1)
 xlabel('Time')
 ylabel('Amplitude')
 title(' Discrete auto correlated waveform')
-
 
 % DISCRETE CROSS CORRELATED SIGNAL
 Out2=xcorr(x,y);
@@ -62,10 +64,12 @@ ylabel('Amplitude')
 title(' Discrete cross correlated waveform')
 ```
 ## OUTPUT:
-
+X1[n] ={2.3,3.2,-4.1,5.3,1.7,-2.9} X2[n]={3,4,-1.5,2,2.7,3.5,2}
 <img width="1920" height="1080" alt="Screenshot 2025-10-09 150009" src="https://github.com/user-attachments/assets/57e57ffe-6b9a-478c-baee-6471f5837d6f" />
 
 ## RESULT:
+The cross correlation of x1[n] and x2[n] is y[n]= {4.6,14.45,9.21,9.49,13.83,10.66,30.89,-19.18,0.55,27.05,-6.5,-8.7}
+
 
 
 
