@@ -63,13 +63,16 @@ xlabel('Time')
 ylabel('Amplitude')
 title(' Discrete cross correlated waveform')
 ```
+## Calculation:
+<img width="650" height="768" alt="image" src="https://github.com/user-attachments/assets/d0f098ed-c3a8-4fd1-b11a-f1d13c487856" />
+
 ## OUTPUT:
 X1[n] ={2.3,3.2,-4.1,5.3,1.7,-2.9} X2[n]={3,4,-1.5,2,2.7,3.5,2}
 <img width="1920" height="1080" alt="Screenshot 2025-10-09 150009" src="https://github.com/user-attachments/assets/57e57ffe-6b9a-478c-baee-6471f5837d6f" />
 
 ## RESULT:
-The cross correlation of x1[n] and x2[n] is y[n]= {4.6,14.45,9.21,9.49,13.83,10.66,30.89,-19.18,0.55,27.05,-6.5,-8.7}
 
+<img width="754" height="272" alt="image" src="https://github.com/user-attachments/assets/8f33de64-fd62-4d16-bc30-a8fc3392d544" />
 
 
 
